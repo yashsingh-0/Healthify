@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import Header from "./components/Header";
-import Curve from "./components/curve";
-import Hero from "./components/hero";
-import Footer from  "./components/footer";
+import Curve from "./components/Curve";
+import Hero from "./components/Hero";
+import Footer from  "./components/Footer";
 import Features from "./components/Features";
 export default function App() {
   const containerRef = useRef(null)
