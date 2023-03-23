@@ -14,8 +14,10 @@
     "flowbite": "^1.6.4",
     "flowbite-react": "^0.4.2",
     "heroicons": "^2.0.16",
+    "locomotive-scroll": "^4.1.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-locomotive-scroll": "^0.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

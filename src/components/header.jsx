@@ -36,7 +36,7 @@ export default function Header() {
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Healthify</span>
-            <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+            <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
               HEALTHIFY
             </div>
           </a>
@@ -75,7 +75,7 @@ export default function Header() {
                       className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
                     >
                       <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-indigo-600" aria-hidden="true" />
+                        <item.icon className="h-6 w-6 text-gray-600 group-hover:text-emerald-600" aria-hidden="true" />
                       </div>
                       <div className="flex-auto">
                         <a href={item.href} className="block font-semibold text-gray-900">
@@ -117,7 +117,7 @@ export default function Header() {
           <a href="#" className="mt-3 text-base font-semibold leading-6 text-gray-900">
             Log in 
           </a>
-          <button className="h-12 ml-10 px-5 text-indigo-700 transition-colors duration-150 border border-indigo-500 rounded-lg focus:shadow-outline font-semibold hover:bg-indigo-500 hover:text-indigo-100">Sign Up</button>
+          <button className="h-12 ml-10 px-5 text-black transition-colors duration-150 border border-emerald-500 rounded-lg focus:shadow-outline font-semibold hover:bg-emerald-600 hover:text-white">Sign Up</button>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -126,7 +126,7 @@ export default function Header() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Healthify</span>
-              <div class="uppercase text-gray-800 dark:text-white font-black text-3xl">
+              <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
               HEALTHIFY
             </div>
             </a>
