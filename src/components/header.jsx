@@ -1,5 +1,6 @@
 import React,{ Fragment, useState } from 'react'
 import { Dialog, Disclosure, Popover, Transition } from '@headlessui/react'
+import { Link } from "react-router-dom";
 import {
   ArrowPathIcon,
   Bars3Icon,
@@ -114,9 +115,9 @@ export default function Header() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="mt-3 text-base font-semibold leading-6 text-gray-900">
+          <Link to={{ pathname: "login"}} className="mt-3 text-base font-semibold leading-6 text-gray-900">
             Log in 
-          </a>
+          </Link>
           <button className="h-12 ml-10 px-5 text-black transition-colors duration-150 border border-emerald-500 rounded-lg focus:shadow-outline font-semibold hover:bg-emerald-600 hover:text-white">Sign Up</button>
         </div>
       </nav>

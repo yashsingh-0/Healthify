@@ -1,11 +1,9 @@
 import React, { useRef } from "react";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
-import Header from "./components/Header";
-import Curve from "./components/Curve";
-import Hero from "./components/Hero";
-import Footer from  "./components/Footer";
-import Features from "./components/Features";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 export default function App() {
   const containerRef = useRef(null)
   return (
@@ -30,11 +28,13 @@ export default function App() {
     <main data-scroll-container ref={containerRef}>
       {/* ...your app */
         <div>
-          <Header />
-          <Hero />
-          <Features />
-          <Footer />
-          <Curve />
+          <BrowserRouter>
+          <Routes>
+           <Route index element={<Home />}></Route>
+           <Route path="login" Component={Login} />
+           
+          </Routes>
+          </BrowserRouter>
         </div>  
       }
     </main>
