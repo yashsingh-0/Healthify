@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Header from '../components/Header';
 import Curve from '../components/Curve';
 const Login = () => {
     const [toggleState, setToggleState] = useState(1);
@@ -9,6 +10,7 @@ const Login = () => {
 
   return (
     <div>
+        <Header />
         <section className="bg-white dark:bg-gray-900">
     <div className="container flex items-center justify-center min-h-screen px-6 mx-auto">
         <form className="w-full max-w-md">

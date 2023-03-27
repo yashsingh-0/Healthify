@@ -5,6 +5,7 @@ import Header from '../components/Header'
 const Signup = () => {
   return (
     <div>
+        <Header />
         <section className="bg-white dark:bg-gray-900">
     <div className="container flex items-center justify-center min-h-screen px-6 mx-auto">
         <form className="w-full max-w-md">

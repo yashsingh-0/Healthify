@@ -36,13 +36,19 @@ export default function Header() {
   const navtosignup = () => {
   navigate('/signup');
 }
+const navtologin = () => {
+  navigate('/login');
+} 
+const navtodefault = () => {
+  navigate('/');
+} 
   return (
     <header className="bg-white">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="#" className="-m-1.5 p-1.5">
             <span className="sr-only">Healthify</span>
-            <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
+            <div onClick={navtodefault} className="uppercase text-gray-800 dark:text-white font-black text-3xl">
               HEALTHIFY
             </div>
           </a>
@@ -120,9 +126,9 @@ export default function Header() {
           </a>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link to={{ pathname: "login"}} className="mt-3 text-base font-semibold leading-6 text-gray-900">
+          <a href="" onClick={navtologin} className="mt-3 text-base font-semibold leading-6 text-gray-900">
             Log in 
-          </Link>
+          </a>
           <button onClick={navtosignup} className="h-12 ml-10 px-5 text-black transition-colors duration-150 border border-emerald-500 rounded-lg focus:shadow-outline font-semibold hover:bg-emerald-600 hover:text-white">Sign Up</button>
         </div>
       </nav>
