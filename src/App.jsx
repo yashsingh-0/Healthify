@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import 'locomotive-scroll/dist/locomotive-scroll.css'
 import Home from "./pages/Home";
+import otpverification from "./pages/otpverification";
 import Login from "./pages/Login";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 export default function App() {
@@ -32,7 +33,7 @@ export default function App() {
           <Routes>
            <Route index element={<Home />}></Route>
            <Route path="login" Component={Login} />
-           
+           <Route path="otpverification" Component={otpverification} />
           </Routes>
           </BrowserRouter>
         </div>  

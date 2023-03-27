@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react'
-import Header from '../components/Header';
 import Curve from '../components/Curve';
 const Login = () => {
     const [toggleState, setToggleState] = useState(1);
