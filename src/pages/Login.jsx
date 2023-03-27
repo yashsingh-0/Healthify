@@ -19,7 +19,7 @@ const Login = () => {
             </div>
             
             <div className="flex items-center justify-center mt-8">
-                <a href="#" onClick={() => toggleTab(1)} className={toggleState === 1 ? "w-1/3 pb-4 font-medium transition duration-700  text-center text-gray-800 capitalize border-b-2 border-emerald-500 dark:border-emerald-400 dark:text-gray-300" : "w-1/3 pb-4 font-medium text-center text-gray-500 capitalize border-b dark:border-gray-400 dark:text-white"}>
+                <a href="#" onClick={() => toggleTab(1)} className={toggleState === 1 ? "w-1/2 pb-4 font-medium transition duration-700  text-center text-gray-800 capitalize border-b-2 border-emerald-500 dark:border-emerald-400 dark:text-gray-300" : "w-1/3 pb-4 font-medium text-center text-gray-500 capitalize border-b dark:border-gray-400 dark:text-white"}>
                     E-mail / Patient Id 
                 </a>
 
@@ -63,11 +63,17 @@ const Login = () => {
                     Login
                 </button>
 
-                <div className="mt-6 text-center ">
+                <div className="mt-6 float-left ">
                     <a href="#" className="text-sm text-emerald-500 hover:underline dark:text-emerald-400">
                         Forgot Password
+                    </a> 
+                </div>    
+                <div className="mt-6 float-right ">    
+                    <a href="signup" className="text-sm text-emerald-500 hover:underline dark:text-emerald-400">
+                        Create Account
                     </a>
                 </div>
+                
             </div>
             <div className={toggleState === 2 ? "mt-6" : "hidden"}>
                 <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-emerald-500 rounded-lg hover:bg-emerald-400 focus:outline-none focus:ring focus:ring-emerald-300 focus:ring-opacity-50">
