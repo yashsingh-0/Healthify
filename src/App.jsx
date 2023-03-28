@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import otpverification from "./pages/otpverification";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Profile from "./pages/Profile";
+import Operator from "./pages/Operator";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 export default function App() {
   const containerRef = useRef(null)
@@ -36,6 +38,8 @@ export default function App() {
            <Route path="login" Component={Login} />
            <Route path="signup" Component={Signup} />
            <Route path="otpverification" Component={otpverification} />
+           <Route path="profile" Component={Profile} />
+           <Route path="operator" Component={Operator} />
           </Routes>
           </BrowserRouter>
         </div>  
